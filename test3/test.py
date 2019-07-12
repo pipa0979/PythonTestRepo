@@ -8,7 +8,7 @@ class TestCalculator(TestCase):
         print("hey")
 
     @patch('calculator.Calculator.summ', return_value=9)
-    def test_sum( self, mock_object):
+    def test_sum(self, mock_object):
         print(mock_object())
         self.assertEqual(mock_object(2, 3), 9)
 #

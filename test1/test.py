@@ -1,12 +1,12 @@
 import unittest
 import logging
 
+
 class TestStringMethods(unittest.TestCase):
 
     def test_upper(self):
         logging.info("called test_upper")
         self.assertEqual('foo'.upper(), 'FOO')
-
 
     def test_isupper(self):
         logging.info("called test_isupper")
@@ -20,10 +20,10 @@ class TestStringMethods(unittest.TestCase):
         with self.assertRaises(TypeError):
             s.split(2)
 
+
 if __name__ == '__main__':
     logging.getLogger().setLevel(logging.INFO)
     unittest.main()
-
 
 '''
 python test.py TestStringMethods.test_isupper
